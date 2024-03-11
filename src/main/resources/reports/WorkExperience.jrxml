@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.21.2.final using JasperReports Library version 6.21.2-8434a0bd7c3bbc37cbf916f2968d35e4b165821a  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="DynamicTalentProfile" pageWidth="341" pageHeight="400" columnWidth="341" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="daf1271a-584f-43e9-a860-1fa7fa6e1239">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="logo" class="java.lang.String"/>
+	<field name="jobTitle" class="java.lang.String"/>
+	<field name="department" class="java.lang.String"/>
+	<field name="duration" class="java.lang.String"/>
+	<field name="reportsTo" class="java.lang.String"/>
+	<field name="organizationName" class="java.lang.String"/>
+	<field name="responsibilities" class="java.lang.String"/>
+	<summary>
+		<band height="200" splitType="Stretch">
+			<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
+			<frame>
+				<reportElement x="0" y="0" width="341" height="200" uuid="7e24e036-8f45-4830-9143-4a54cff3ec7c"/>
+				<image>
+					<reportElement x="20" y="20" width="40" height="41" uuid="b01b8ac7-a99c-4a06-893b-55ab8ec4deb5">
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+					<imageExpression><![CDATA["/Users/rishabhtiwari/Downloads/c0b679223a1c8802733085c362bfb6d8.png"]]></imageExpression>
+				</image>
+				<textField>
+					<reportElement x="70" y="20" width="260" height="30" uuid="05c0d940-109c-475b-9ce0-e53d34656cdd"/>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Arial Unicode MS" size="16"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{jobTitle}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="70" y="60" width="260" height="40" uuid="46b14dd3-cb65-4241-89cd-64ae4f9b27b5"/>
+					<textElement>
+						<font size="12"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{department}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="69" y="110" width="261" height="20" uuid="c4399493-3569-44aa-9cc3-b273e9ef91cb"/>
+					<textFieldExpression><![CDATA[$F{organizationName}]]></textFieldExpression>
+				</textField>
+				<line>
+					<reportElement x="20" y="140" width="310" height="1" uuid="8fc8d91e-88b2-4fe9-be5c-f5cca5be69d9"/>
+					<graphicElement>
+						<pen lineWidth="0.5" lineColor="#DFDFDF"/>
+					</graphicElement>
+				</line>
+				<textField>
+					<reportElement x="20" y="160" width="310" height="30" uuid="fc7ff305-2e62-4bac-b146-a2289191f11e"/>
+					<textFieldExpression><![CDATA[$F{duration}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="20" y="200" width="310" height="140" uuid="d4049d3d-ed7c-4ca5-a9ec-4bd32bd2f54e"/>
+					<textElement>
+						<font size="12"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{responsibilities}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="20" y="350" width="310" height="40" uuid="5c18015a-224e-4e03-8da6-643ea42a4fdd"/>
+					<textElement>
+						<font size="12"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{reportsTo}]]></textFieldExpression>
+				</textField>
+			</frame>
+		</band>
+	</summary>
+</jasperReport>
